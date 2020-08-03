@@ -1,0 +1,60 @@
+.skills {
+  margin-left: 25%;
+  position: relative;
+  @include respond(big) {
+    margin-left: 45%;
+  }
+  @include respond(medium) {
+    margin: 0 2rem 16rem 2rem;
+  }
+
+  &__hidden {
+    display: none;
+    @include respond(medium) {
+      display: block;
+    }
+  }
+  &__main {
+    // opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 20rem;
+    @include respond(small) {
+      height: auto;
+    }
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+    border-radius: 0.4rem;
+    border: $border-white;
+    transition: box-shadow 0.2s;
+    &:hover {
+      box-shadow: 0 0.3rem 0.5rem 0rem rgba(0, 0, 0, 0.05),
+        0 0.4rem 1rem 0.2rem rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  &__img {
+    height: 7rem;
+    margin-top: 2rem;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    @include respond(small) {
+      display: block;
+    }
+  }
+  &__h3 {
+    font-size: 2.2rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 1.4rem;
+  }
+  &__li {
+    font-size: 1.7rem;
+  }
+}

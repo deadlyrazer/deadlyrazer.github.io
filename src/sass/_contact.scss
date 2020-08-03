@@ -1,0 +1,22 @@
+.contact {
+  margin-top: 5rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  border-top: $border-white;
+  &__h3 {
+    font-size: 2rem;
+    color: $color-black-primary;
+    margin-bottom: 1rem;
+  }
+  &__icon {
+    height: 4rem;
+    margin-right: 2rem;
+    fill: $color-black-primary;
+
+    &:hover {
+      fill: red;
+    }
+  }
+}

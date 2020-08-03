@@ -1,0 +1,31 @@
+.btn {
+  font-size: 1.6rem;
+  color: $color-black-primary;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+  display: inline-block;
+  font-weight: 600;
+  &--primary {
+    padding: 1rem 2.2rem;
+    border: 0.1rem solid rgb(235, 235, 235);
+    border-radius: 0.4rem;
+
+    &:hover {
+      color: $color-black-primary;
+      transform: translateY(-0.2rem);
+      background-color: #fff;
+      box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  &--tertiary {
+    border-bottom: 1.5px solid rgb(110, 110, 110);
+  }
+}
+
+.section__h2 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
